@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Barlow Condensed", sans-serif;
+    background-image: url(./assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .nav-links {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    backdrop-filter: blur(2rem);
+    transition: left 0.3s ease;
+    z-index: 999;
+    list-style: none;
+
+  }
+  
+  
+  
+  .nav-links.active {
+    left: 50%;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #f1f1f1;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -70%;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+
+  hr {
+    width: 60%; 
+    border: 1px solid #ddd;
+    margin: 0;
+  }
+
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius:20px;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  .titleOne{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-left: 50px;
+    text-align: start;
+    letter-spacing:2px;
+  }
+  .titleOne span{
+    color: rgb(147, 147, 147);
+    font-weight: 700;
+    margin-right: 5px;
+  }
+  .main_moon {
+    width:90%;
+    margin: 0 auto;
+
+    }
+
+    .container{
+        display: flex;
+        justify-content:space-between;
+        color: #fff;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 20px;
+        margin-bottom: 50px;
+        
+
+    }
+.left{
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+    .right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .planets {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        list-style: none;
+    }
+    
+    .planets a {
+        color: #D0D6F9;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        position: relative;
+        white-space: nowrap;
+        transition: color 0.3s ease;
+    }
+    
+    .planets a:hover, 
+    .planets a:focus {
+        color: #fff;
+    }
+    
+    .planets a::after {
+        content: "";
+        position: absolute;
+        bottom: -70%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        visibility: hidden; 
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        border-radius: 20px;
+    }
+    
+    .planets a:hover::after,
+    .planets a:focus::after {
+        visibility: visible; 
+        transform: scaleX(1); 
+    }
+    
+    
+    
+    .titleMoon    {
+        
+    font-family: "Bellefair", serif;
+    font-size: 96px;
+    margin: 20px 0;
+    font-weight: 200;
+    text-transform: uppercase;
+    }
+    .description{
+        font-family: "Barlow", sans-serif;
+        font-size: 18px;
+        line-height: 180%;
+        color: #D0D6F9;
+    }
+    
+  .under-description{
+    width: 100%; 
+    height: 1px;
+    border: 2px solid #d0d6f965;
+    margin: 20px 0;
+    border-radius: 10px;
+
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Pstatus{
+    display: flex;
+    flex-direction: column;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #D0D6F9;
+}
+
+.status span{
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+    
+    nav{
+        padding:0;
+        margin: 0;
+      }
+      .nav-links{
+        width:100%;
+        align-items: flex-start;
+        padding:  20px;
+      }
+      .nav-links a{
+        font-size: 18px;
+      }
+
+    hr{
+        display:none;
+    }
+
+    .logo{
+        width: 48px;
+        height: 48px;
+        margin:0 20px;
+    }
+    .main_moon{
+        padding-top: 100px;
+    }
+    .container{
+        flex-direction: column;
+        padding: 10px;
+        margin:0 auto;
+    }
+    .left{
+        width:auto;
+        margin: 0 auto;
+    }
+    
+    .left img{
+        width:380px;
+        height: 380px;
+    }
+    .right{
+        font-size: 16px;
+        width:  81%  ;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .planets{
+        gap:  30px;
+        justify-content: center;
+    }
+    .titleMoon    {
+        
+    font-size: 80px ;
+    margin: 5px 0;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .under-description{
+        display: block;
+    }
+    .status{
+        align-items: center;
+        padding: 0 20px;
+    }
+    .Pstatus{
+        font-size: 12px;
+    }
+    .status span{
+        font-size: 20px;
+    }
+    .titleOne{
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .titleOne span{
+        margin-right: 0;
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .left img{
+        width: 150px;
+        height: auto;
+    }
+    .right{
+        width: 80%  ;
+    }
+    .planets{
+        gap: 10px;
+    }
+    .titleMoon{
+        font-size: 56px;
+
+    }
+    .description{
+        font-size: 14px;
+    }
+    .under-description{
+        display: block;
+    }
+    .status{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Pstatus{
+        font-size: 14px;
+        padding: 20px 0;
+
+    }
+    .status span{
+        font-size: 28px;
+    }
+    .titleOne{
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .titleOne span{
+        margin-right: 0;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        z-index: 1000;
+    }
+    .hamburger .bar{
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+    nav{
+      padding:0;
+    }
+
+    .logo{
+        width: auto;
+        height: auto;
+    }
+    .nav-links{
+        display: none;
+        position: relative;
+    }
+    .nav-links.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 10px;
+        background-color: hsla(0, 0%, 10%, 0.1);
+        backdrop-filter: blur(2rem);
+        padding-top: 80px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    .nav-links a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .nav-links a:hover {
+        border-right:2px  solid #fff;
+        color: #fff;
+
+    } 
+    
+    .nav-links a:hover::after {
+        visibility:hidden;
+        transform: scaleX(0);
+    }
+          
+      
+    .hamburger-menu{
+        display: flex;
+        gap: 10px;
+    }
+    .hamburger-menu a{
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .hamburger-menu a:hover{
+        color: #fff;
+    }
+    .hamburger-menu a::after{
+        display: none;
+    }
+    .hamburger-menu.active{
+        display: flex;
+        gap: 10px;
+        background-color: #fff;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    .hamburger-menu a{
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .hamburger-menu a:hover{
+        color: #fff;
+    }
+    .hamburger-menu a::after{
+        display: none;
+    }
+}
+.hidden {
+    display: none;
+}
+
+

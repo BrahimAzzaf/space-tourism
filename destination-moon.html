@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="Moon-style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+  <title>Destination</title>
+</head>
+<body>
+  <header>
+    <nav role="navigation">
+      <img src="./assets/shared/logo.svg" class="logo" alt="Space Tourism Logo">
+      <hr>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" >00 Home</a></li>
+        <li><a href="destination-moon.html" class="nav-link" >01 Destination</a></li>
+        <li><a href="crew.html" class="nav-link" >02 Crew</a></li>
+        <li><a href="technology.html" class="nav-link" >03 Technology</a></li>
+      </ul>
+      <div class="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+    </nav>
+  </header>
+
+  
+  <main class="main_moon">
+    <h1 class="titleOne">
+      <span>01</span> Pick your destination
+    </h1>
+    <div class="container">
+    <div class="left">
+      <img src="./assets/destination/image-moon.webp" alt="Moon" id="moon-img"   >
+          </div>
+    <div class="right">
+      <ul class="planets ">
+        <li><a href="#" id="moon" >       Moon        </a> </li>
+    <li><a href="#" id="mars" >Mars   </a></li>
+    <li><a href="#" id="europa">  Europa  </a></li>
+    <li><a href="#" id="titan">      Titan  </a></li>
+    </ul>
+    <div class="moon_container planet-container  " id="moon">
+
+      <h2 class="titleMoon" >
+        Moon
+      </h2>
+      <p class="description">
+        See our planet as you've never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you're there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>
+      <hr class="under-description">
+      <div class="status">
+      <p class="Pstatus">
+        Avg. distance
+        <span class="data">
+          384,400 km
+        </span>
+      </p>
+      <p class="Pstatus">
+        Est. travel time
+        <span class="data">
+          3 days
+        </span>
+      </p>
+      </div>
+      </div>
+      <!--   MARS container -->
+      <div class="mars_container planet-container  hidden" id="mars">
+
+        <h2 class="titleMoon" >
+          Mars
+        </h2>
+        <p class="description">
+          See our planet as you've never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you're there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <hr class="under-description">
+        <div class="status">
+        <p class="Pstatus">
+          Avg. distance
+          <span class="data">
+            384,400 km
+          </span>
+        </p>
+        <p class="Pstatus">
+          Est. travel time
+          <span class="data">
+            3 days
+          </span>
+        </p>
+        </div>
+        </div>
+      <!--   Europa container -->
+      <div class="europa_container planet-container  hidden" id="europa">
+
+        <h2 class="titleMoon" >
+          Europa
+        </h2>
+        <p class="description">
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover's dream. 
+          With an icy surface, it's perfect for a bit of ice skating, curling, hockey, 
+          or simple relaxation in your snug wintery cabin.
+        </p>
+        <hr class="under-description">
+        <div class="status">
+        <p class="Pstatus">
+          Avg. distance
+          <span class="data">
+            628 MIL. km
+          </span>
+        </p>
+        <p class="Pstatus">
+          Est. travel time
+          <span class="data">
+            9 years
+          </span>
+        </p>
+        </div>
+        </div>
+      <!--   titan container -->
+      <div class="titan_container planet-container  hidden" id="titan">
+
+        <h2 class="titleMoon" >
+          titan
+        </h2>
+        <p class="description">
+          The only moon known to have a dense atmosphere other than Earth, 
+          Titan is a home away from home (just a few hundred degrees colder!). As a bonus, 
+          you get striking views of the Rings of Saturn.
+        </p>
+        <hr class="under-description">
+        <div class="status">
+        <p class="Pstatus">
+          Avg. distance
+          <span class="data">
+            1.6 BIL. km
+          </span>
+        </p>
+        <p class="Pstatus">
+          Est. travel time
+          <span class="data">
+            7 years
+          </span>
+        </p>
+        </div>
+        </div>
+    </div>
+    </div>
+  </main>
+  <script src="destinationScript.js"></script>
+</body>
+</html>
